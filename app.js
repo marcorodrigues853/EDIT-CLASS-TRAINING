@@ -101,7 +101,7 @@ splitInfo('Array Includes');
 /**
  * Reverses the order of the elements in an array.
  */
-
+splitInfo('Array Reverse');
 const listIconsReverse = ['😀', '😫', '😀', '😫', '🤪'];
 listIconsReverse.reverse(); // [🤪, 😫, 😀, 😫, 😀]
 console.log('listIconsReverse: ', listIconsReverse); // [🤪, 😫, 😀, 😫, 😀]
@@ -110,3 +110,47 @@ console.log('listIconsReverse: ', listIconsReverse); // [🤪, 😫, 😀, 😫,
 const listNumbersReverse = [1, 2, 3, 4, 5];
 listNumbersReverse.reverse(); // [5, 4, 3, 2, 1]
 console.log('listNumbersReverse: ', listNumbersReverse); // [5, 4, 3, 2, 1]
+
+splitInfo('End Array Reverse');
+
+//? Array.sort()
+/*
+Sorts the elements of an array in place and returns the array. The default sort order
+ is according to string Unicode code points.
+*/
+splitInfo('Array Sort');
+const listIconsSort = ['😀', '😫', '😀', '😫', '🤪'];
+listIconsSort.sort(); // [😀, 😀, 😫, 😫, 🤪]
+console.log('ICON SORT RESULT', listIconsSort.sort());
+
+// This make more sense 🤔
+const listLettersSort = ['D', 'B', 'A', 'C'];
+listLettersSort.sort(); // 😀 ['A', 'B', 'C', 'D']
+console.log('LETTER SORT RESULT', listLettersSort.sort());
+
+// OR
+const listNumberSort = [4, 1, 3, 2, 10];
+listNumberSort.sort(); // 😧 [1, 10, 2, 3, 4]
+listNumberSort.sort((a, b) => a - b); // 😀 [1, 2, 3, 4, 10]
+
+console.log('SORT 1', listNumberSort.sort());
+console.log(
+  'SORT 2',
+  listNumberSort.sort((a, b) => a - b),
+);
+splitInfo('End Array Sort');
+
+splitInfo('');
+splitInfo('');
+
+splitInfo('');
+splitInfo('');
+
+splitInfo('');
+splitInfo('');
+
+splitInfo('');
+splitInfo('');
+
+splitInfo('');
+splitInfo('');
