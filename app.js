@@ -1,19 +1,22 @@
 function splitInfo(title) {
   console.log('');
   console.log(
-    `===========================${
+    `=================${
       title ? ` ${title.toUpperCase()} ` : ''
-    }================================`,
+    }=================`,
   );
   console.log('');
 }
+
+// Array basics
+// codepen.io/swolpe/pen/KKvQOLV
 
 //? Array.map()
 /*
 Returns a new array with the results of calling a provided function on every
 element in this array.
 */
-splitInfo('Array Map');
+https: splitInfo('Array Map');
 
 console.log('Array.map');
 const listMap = ['😫', '😫', '😫', '😫'];
@@ -95,7 +98,7 @@ listNumberInclude.includes(6); // false
 
 console.log('listNumberInclude', listNumberInclude.includes(3));
 
-splitInfo('Array Includes');
+splitInfo('End Array Includes');
 
 //? Array.reverse()
 /**
@@ -139,18 +142,3 @@ console.log(
   listNumberSort.sort((a, b) => a - b),
 );
 splitInfo('End Array Sort');
-
-splitInfo('');
-splitInfo('');
-
-splitInfo('');
-splitInfo('');
-
-splitInfo('');
-splitInfo('');
-
-splitInfo('');
-splitInfo('');
-
-splitInfo('');
-splitInfo('');
