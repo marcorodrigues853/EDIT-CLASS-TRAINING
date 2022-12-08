@@ -142,3 +142,5 @@ console.log(
   listNumberSort.sort((a, b) => a - b),
 );
 splitInfo('End Array Sort');
+
+const arrayTempo = [[{ teste: 22, teste3: 33 }]];
