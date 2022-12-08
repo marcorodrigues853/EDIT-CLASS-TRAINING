@@ -41,19 +41,22 @@ const youtubeList = [
 ];
 
 // console.log('youtubeList', youtubeList);
-const htmlCards = youtubeList.map(
-  (item) =>
-    `
+const htmlCards = youtubeList.map((item) => {
+  const { imagem, duracao, titulo, descricao, user, outrosVideo } = item;
+
+  const build = `
   <div className="Card">
-    <img src="${item.imagem}" className="img"></img>
-    <div className="titulo-verde">${item.titulo}</div>
-    <div className="descricao">${item.descricao}</div>
-    <div className="duracao">${item.duracao}</div>
-    <div>${`O user ${item.user} tem mais ${
-      item.outrosVideo.length ? item.outrosVideo.length : 'sem videos'
+    <img src="${imagem}" className="img"></img>
+    <div className="titulo-verde">${titulo}</div>
+    <div className="descricao">${descricao}</div>
+    <div className="duracao">${duracao}</div>
+    <div>${`O user ${user} tem mais ${
+      outrosVideo.length ? outrosVideo.length : 'sem videos'
     }`}</div>
   </div>
-  `,
-);
+  `;
+
+  return build;
+});
 
 console.log('htmlCards', htmlCards);
