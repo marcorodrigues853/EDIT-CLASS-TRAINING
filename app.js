@@ -16,7 +16,7 @@ function splitInfo(title) {
 Returns a new array with the results of calling a provided function on every
 element in this array.
 */
-https: splitInfo('Array Map');
+// https: splitInfo('Array Map');
 
 console.log('Array.map');
 const listMap = ['😫', '😫', '😫', '😫'];

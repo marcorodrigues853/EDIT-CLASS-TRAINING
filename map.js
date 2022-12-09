@@ -43,7 +43,6 @@ const youtubeList = [
 // console.log('youtubeList', youtubeList);
 const htmlCards = youtubeList.map((item) => {
   const { imagem, duracao, titulo, descricao, user, outrosVideo } = item;
-
   const build = `
   <div className="Card">
     <img src="${imagem}" className="img"></img>
