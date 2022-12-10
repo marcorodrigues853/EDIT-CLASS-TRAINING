@@ -93,13 +93,13 @@ const cesto4 = ['fraldas'];
 const baciaRoupa = ['meias', 'calçoes', 'soutiens'];
 
 function planearTarefasSenhoraLimpeza() {
-  console.log('=================  LIMPAR CASA ==========================');
+  console.log('=================  LIMPAR CASA =======================');
   limparCasa();
   // estenderRoupa();
-  console.log('=================  ESTENDER ROUPA ==========================');
+  console.log('=================  ESTENDER ROUPA =======================');
   estenderRoupa(true, true, baciaRoupa);
 
-  console.log('=================  LAVARA ROUPA ==========================');
+  console.log('=================  LAVARA ROUPA =======================');
   lavarRoupa(cesto4);
 }
 
